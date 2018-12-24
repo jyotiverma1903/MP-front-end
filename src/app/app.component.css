@@ -1,0 +1,35 @@
+.navbar-custom {
+    background: Green;
+    background-color:#f13918;
+
+      
+       
+    }
+    #font-adjust{
+        font-family: Courier;
+        background: rgb(9, 102, 126);
+        font-weight:bold;
+        color:rgb(56, 58, 47);
+        cursor:pointer;
+        box-shadow: 0 3px 20px 0 #e7eb1b;
+        
+       text-transform: uppercase;
+       position :center;
+       border-radius: 5px;
+       display: flex;
+       margin-left: auto;
+        margin-right: auto;
+       
+      
+        
+    
+    }
+
+    P.blocktext {
+        margin-left: auto;
+        margin-right: auto;
+        width: 8em;
+    }
+
+
+    

@@ -1,0 +1,38 @@
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4 col-lg-4 col-xs-6 col-md-4">
+        <h4><i style="font-size:24px" class="fa">&#xf0c0;</i> {{userName}}</h4>
+      </div>
+      <div class="col-sm-4 col-xs-0 col-lg-4 col-md-4"></div>
+      
+      <div class="col-sm-2 col-xs-3 col-lg-2 col-md-2">
+      
+        </div>
+        <div class="col-sm-2 col-xs-3 col-lg-2 col-md-2">
+        <button  class=" btn btn-primary btn-sm" style="font-size:1.5rem;" [routerLink]="['/login']"> <i style="font-size:24px" class="fa">&#xf29b;</i> : Exit </button>
+      </div>
+    </div>
+
+    <br>
+
+        <div class="row text-center" *ngIf="allUserList" >
+          <div class="col-sm-4 col-lg-4 col-xs-12 col-md-4 box" *ngFor="let user of allUserList">
+          <div class="card">
+             <div class="card-header head">
+              <i style="font-size:24px" class="fa">&#xf2be;</i> {{user.firstName}} {{user.lastName}}
+              </div>
+              <div class="card-body">
+                <h5 class="card-text"><i class="fa fa-id-card" aria-hidden="true"> {{user.userId}}</i></h5>
+                <p class="card-text"><i class="fa fa-envelope" aria-hidden="true"></i> {{user.emailId}}</p>
+                <p class="card-text"><i class="fa fa-phone" aria-hidden="true"></i> {{user.phoneNumber}}</p>
+                <div *ngIf="user.userId != userId">
+                    <button class=" btn btn-primary btn-sm"  (click)="goToUserCalendar(user)">
+                      <i class="fa fa-calendar"></i>  -  Schedule Meeting
+                    </button>
+                </div>
+              </div>
+            </div>
+         </div>
+         </div>
+
+  </div>

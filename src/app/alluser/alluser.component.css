@@ -1,0 +1,19 @@
+.head{
+    font-family : italic;
+    color:black;
+    font-size : 1.5rem;
+    box-shadow: 0 3px 20px 0 #ff6600;
+}
+
+
+.card {
+    margin-top: 6px;
+    border-color: rgb(247, 40, 40);
+    background: rgb(243, 245, 245);
+    box-shadow: 0 3px 20px 0 #ff6600; 
+}
+.card:hover {
+    background-color: #b5f7a8;
+  }
+
+
